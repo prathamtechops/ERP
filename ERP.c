@@ -17,6 +17,6 @@ struct ERP
 //  hello
 int main() {
 
-
+int i;
 
 }
