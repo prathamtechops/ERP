@@ -10,6 +10,11 @@
 #include <stdio.h>
 #include <conio.h>
 
+void intro()
+{
+    printf("WELCOME");
+}
+
 struct MANAGEMENT_SYSTEM
 {
         struct Student
@@ -49,6 +54,17 @@ struct MANAGEMENT_SYSTEM
             };
             
         };
+        
+        struct Library
+    {
+        char student_name[256];
+        char course_name[256];
+        int roll_no;
+        char authorName[256];
+        char bank_name[256];
+        int book_id;
+        int due_date = 0;
+    };
         
 };
 
