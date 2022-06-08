@@ -61,7 +61,7 @@ struct MANAGEMENT_SYSTEM
         char authorName[256];
         char bank_name[256];
         int book_id;
-        int due_date = 0;
+        int due_date;
     };
 };
 
