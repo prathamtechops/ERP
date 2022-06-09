@@ -14,53 +14,66 @@ void intro()
     printf("WELCOME");
 }
 
-struct MANAGEMENT_SYSTEM
+struct Student
 {
-    struct Student
+    char studentName[30];
+    char batchName[5];
+    char mailId[30];
+    char official_MailId[30];
+    char enrollNo;
+    int startYear;
+    int endYear;
+
+    struct Attendance
     {
-        char studentName[30];
-        char batchName[5];
-        char mailId[30];
-        char official_MailId[30];
-        char enrollNo;
-        int startYear;
-        int endYear;
-
-        struct Attendance
+        struct Sub
         {
-            struct Sub
-            {
-                int totalClasses;
-                int attendendClasses;
-                int totalPercentage;
-            };
-            int totalclasses;
-            int attendendclasses;
-            int totalpercentage;
+            int totalClasses;
+            int attendendClasses;
+            int totalPercentage;
         };
-
-        struct DOB
-        {
-            int Day;
-            int Month;
-            int Year;
-        };
-
-        struct Fee
-        {
-            int submitFee;
-            int pendingFee;
-        };
+        int totalclasses;
+        int attendendclasses;
+        int totalpercentage;
     };
 
-    struct Library
+    struct DOB
     {
+        int Day;
+        int Month;
+        int Year;
+    };
+
+    struct Fee
+    {
+<<<<<<< Updated upstream
         char student_name[256];
         char course_name[256];
         int roll_no;
         char authorName[256];
         char bank_name[256];
         int book_id;
+=======
+        int submitFee;
+        int pendingFee;
+    };
+};
+
+struct Library
+{
+    char student_name[256];
+    char course_name[256];
+    int roll_no;
+    char authorName[256];
+    char bank_name[256];
+    int book_id;
+
+    struct Issue_Date
+    {
+        int day;
+        int month;
+        int year;
+>>>>>>> Stashed changes
         int due_date;
     };
 };
