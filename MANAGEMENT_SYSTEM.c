@@ -46,14 +46,12 @@ struct Student
 
     struct Fee
     {
-<<<<<<< Updated upstream
         char student_name[256];
         char course_name[256];
         int roll_no;
         char authorName[256];
         char bank_name[256];
         int book_id;
-=======
         int submitFee;
         int pendingFee;
     };
@@ -73,7 +71,6 @@ struct Library
         int day;
         int month;
         int year;
->>>>>>> Stashed changes
         int due_date;
     };
 };
