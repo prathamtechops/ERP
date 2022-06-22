@@ -98,7 +98,10 @@ int main()
             scanf("%d", &lib[i].book_id);
             printf("Roll_no: ");
             scanf("%d", &lib[i].roll_no);
+            printf("\n----------------------------------\n");
+            printf("Entry recorded please return the book in 7 days.\n");
         }
+        break;
     case 2:
         if (no == 0)
             printf("No record present");
@@ -115,5 +118,6 @@ int main()
                 printf("\nBook ID: %d", lib[i].book_id);
             }
         }
+        break;
     }
 }
