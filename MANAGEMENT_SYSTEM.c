@@ -66,6 +66,15 @@ struct Library
     int book_id;
 };
 
+void listofbooks()
+{
+    printf("\n********************************************************************************************\n");
+    printf("Book 1\n");
+    printf("Book 1\n");
+    printf("Book 1\n");
+    printf("\n********************************************************************************************\n");
+}
+
 int main()
 {
 
@@ -78,6 +87,7 @@ int main()
 
     printf("Press 1 to issue a book\n");
     printf("Press 2 to see the details\n");
+    printf("Press 3 to see the list of books\n");
 
     scanf("%d", &a);
 
@@ -119,5 +129,7 @@ int main()
             }
         }
         break;
+    case 3:
+        listofbooks();
     }
 }
