@@ -1,0 +1,6 @@
+Student 1
+The name of the student is: pratham 
+Course name: bca
+Student 1
+The name of the student is: hamid 
+Course name: bca
